@@ -1,38 +1,245 @@
-.App {
-  text-align: center;
+
+.color{color: #002f34;}
+.header{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    z-index: 9;
+    background-color: #f1f1f1;
+
+    box-shadow: 0px 2px 2px #dadada;
+    padding: 0px 4%;
+
+}
+.header .logo{
+    width: 50px;
+    margin-right: 0%;
+}
+.header .logo img{
+    width: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header .location{
+    background: #fff;
+    border: 2px #002f34 solid;
+    border-radius: 5px;
+    margin-left: 70px;
+}
+.header .location .ico{
+     padding: 15px;
+}
+.header .location .label{
+    flex: 1;
+    padding: 10px;
+    border: 0px;
+}
+.header .location .arro{
+    flex: 1;
+    padding: 12px;
+    border: 0px;
+    background: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.header .search{
+    background: #fff;
+    border: 2px #002f34 solid;
+    border-radius: 5px;
+    flex: 2;
+    margin:0px 15px;
+}
+.header .search .query{
+    flex: 1;
+    padding: 16px;
+    border: 0px;
+}
+.header .search .go{
+    flex: 1;
+    padding: 13px;
+    border: 0px;
+    background: #002f34;
+    max-width: 50px;
+}
+.header .search .gohover{}
+.header .actions{
+    flex: 1;
+    max-width: 200px;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header .actions a{
+    color: #002f34;
+    margin: 0px 20px 10px 0px;
+
+}
+.header .actions .sell{
+    padding: 8px 20px;
+    border: 3px #00c4ff solid;
+    color: #002f34;
+    text-align: center;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 3px 5px #a9a9a9;
+}
+.header .actions .sell .ico{margin-right: 8px;}
+
+.header .actions .sell:hover{}
+
+.hnav{
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+    z-index: 8;
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgb(218 218 218 / 36%);
+    padding: 0px 2%;
+}
+.hnav .view-cates{
+    border: 0px;
+    padding: 10px 15px;
+    background: rgb(0,0,0,0);
+}
+.hnav .view-cates .arro{
+    padding:3px 10px;
+    border: 0px;
+    background: rgb(0,0,0,0);
+    margin-left: 10px;
+}
+.hnav .view-cates:hover{
+    background: #f1f1f1;
+}
+.hnav a{
+    padding: 15px;
+    margin-right: 2px;
+}
+.hclr{
+    height: 120px;
+}
+.home{
+    padding: 30px 5%;    
+    
+    flex-wrap: wrap;
+}
+.ad-list{
+    flex-wrap: wrap;
+}
+.ad-item{
+    min-width: 268px;
+    min-height: 216px;
+    max-width: 288px;
+    max-height: 266px;
+    flex-basis: 20%;
+    margin: 8px;
+    border: 1px #ddd solid;
+    padding: 8px;
+}
+.ad-item .poster{
+    height: 160px;
+}
+.ad-item .poster.placeholder{}
+.ad-item .title{
+    margin: 10px 0px;
+      
+}
+.ad-item .title.placeholder{
+    height: 25px;
+    width:75% ;
 }
 
-.App-link {
-  color: #61dafb;
+.ad-item .tagline{}
+.ad-item .tagline.placeholder{
+    width:90% ;
+    height: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ad-item .ftr{
+    margin-top: 15px;
+}
+.ad-item .ftr.location{
+    flex: 2;
+}
+.ad-item .ftr.location.placeholder{
+    height: 12px;
+    max-width: 100px;
+}
+
+.ad-item .ftr.stamp{
+    flex: 1;
+}
+.ad-item .ftr.stamp.placeholder{
+    height: 0px;
+}
+.load-more {
+    margin: 40px auto;
+    display: table;
+    border: 3px #002f34 solid;
+    background: #fff;
+    padding: 9px 15px;
+    border-radius: 7px;
+}
+.load-more:hover{
+    border: 6px #002f34 solid;
+    background: #fff;
+}
+
+.app-ribbon{
+    padding: 0px 2%;
+    background: #f9f9f9;
+}
+
+
+.app-ribbon .img{}
+.app-ribbon .img img{}
+
+.app-ribbon .meta{}
+.app-ribbon .meta .title{
+    margin-bottom: 25px;
+}
+.app-ribbon .meta .title2{}
+
+
+.app-ribbon .link{
+    margin-left: 35px;
+}
+.app-ribbon .link .title{
+    margin-bottom: 25px;
+}
+.app-ribbon .link .as{}
+.app-ribbon .link a{
+    margin:0px 10px 0px 0px;
+
+}
+.app-ribbon .link a:hover{}
+
+
+.footer{
+    padding: 0px 2%;
+    background: #f9f9f9;
+    border-top: 1px #ccc solid;
+}
+.footer .block{
+    flex: 1;
+    padding: 20px 0px 50px 0px;
+}
+.footer .block .htitle{
+    margin-bottom: 10px;
+}
+.footer .block a{
+    line-height: 1.6;
+}
+
+.footer2{
+    padding: 15px 2%;
+    background: #002f34;
+    color: white;
+}
+.footer2 h2{
+    flex: 1;
+}
+.footer2 h2.right{
+    text-align: right !important;
 }

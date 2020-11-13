@@ -1,0 +1,75 @@
+body{
+   font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6{
+    margin:0px; padding:0px; font-weight: normal;
+}
+
+.fixed{position: fixed;}
+.rel{position: relative;}
+.abs{position: absolute;}
+.sticky{position: sticky;}
+.flex{display: flex;}
+.flex-col{flex-direction: column;}
+.aic{align-items: center;}
+.bl{display: block;}
+.ibl{display: inline-block;}
+input, button, select, textarea{outline: none;}
+
+button{cursor: pointer;}
+
+.font{
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: normal;
+}
+
+.fontl{
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 300;
+}
+
+.fontb{
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 700;
+}
+.b{
+    font-weight: bold;
+}
+.s12{font-size: 12px;}
+.s13{font-size: 13px;}
+.s14{font-size: 14px;}
+.s15{font-size: 15px;}
+.s16{font-size: 16px;}
+.s17{font-size: 17px;}
+.s18{font-size: 18px;}
+.s19{font-size: 19px;}
+.s20{font-size: 20px;}
+.s21{font-size: 21px;}
+.s22{font-size: 22px;}
+.s23{font-size: 23px;}
+.s24{font-size: 24px;}
+
+.sign{
+    text-decoration: none;
+}
+.sign:hover {
+    text-decoration: underline;
+}
+.noul{
+    text-decoration: none;
+}
+.noul:hover {
+    color: #88a7f3;
+    transition: 0.5s;
+}
+.cfff{color: #fff}
+
+.anim{transition: all 0.2s linear 0s;}
+.placeholder{
+    background: #ccc;
+    animation: placeholder 1s linear infinite;
+}
+@keyframes placeholder{
+        50%{opacity: 0.5;}
+        
+}
